@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Product>
+    
+@{
+    ViewData["Title"] = "کتاب کده";
+}
+
+<div class="text-center">
+    <div class="row">
+        @foreach(var Product in Model)
+        {
+            <div class="col-3">
+                <div class="card">
+                    <img src="/img/@(Product.Id).jpg" class="card-img-top img-thumbnail"/>
+                    <div class="card-body">
+                        <h5 class="card-title">@Product.Name</h5>
+                        <h5 class="card-title">@Product.price تومان</h5>
+                        <a asp-action="Product"
+                           asp-controller="Home"
+                           asp-route-id="@Product.Id">جزئیات</a>
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+</div>

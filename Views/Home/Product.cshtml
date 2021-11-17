@@ -1,0 +1,14 @@
+@model Product
+@{
+    ViewData["Title"] = @Model.Name;
+}
+<div class="text-center">
+    <h1 class="display-5">@Model.Name</h1>
+    <hr/>
+    <img src="/img/@(Model.Id).jpg" class="img-thumbnail"/>
+    <p class="py-4 text-justify">@Model.Description</p>
+    <p>قیمت : @Model.price تومان</p>
+    <div>
+        <a class="btn btn-primary btn-lg" href="#">افزودن به سبد خرید</a>
+    </div>
+</div>
