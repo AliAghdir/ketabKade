@@ -1,5 +1,4 @@
 Ketab Kade
-Video Demo: <https://youtu.be/kJnUsPsETeE>
 Description:
 Buy books online so that sellers can place their books on the site
 Users offer.
